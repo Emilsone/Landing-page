@@ -1,186 +1,57 @@
 <template>
-  <section class="text-gray-700">
-    <div class="container px-5 py-24 mx-auto">
-      <TabIndex @tabchange="changeTab($event)" />
-      <div class="general-container" v-show="tabActiveIndex == 0">
-        <div class="flex flex-wrap justify-center -m-4">
-          <div class="p-4 lg:w-2/5">
-            <div
-              class="h-full px-8 pt-16 pb-24 overflow-hidden  relative card-page"
-            >
-              <h1
-                class="title-font sm:text-2xl text-xl font-medium text-white mb-3"
-              >
-                Payme Design System
-              </h1>
-              <p class="leading-relaxed mb-3">
-                MyCustomer is an on-demand, scalable ledger solution for small
-                and medium sized businesses globally.
-              </p>
-              <a class="text-indigo-500 inline-flex items-center"
-                >Read Case Study
-                <svg
-                  class="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <div class=" mt-24 flex   ">
-                <img
-                  src="../assets/holding-iphone.png"
-                  alt=" love logo"
-                  class="ml-auto image-phone"
-                  id="image-phone"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="p-4 lg:w-2/5">
-            <div
-              class="h-full  px-8 pt-16 pb-24  overflow-hidden  relative card-page"
-            >
-              <h1
-                class="title-font sm:text-2xl text-xl font-medium text-white mb-3"
-              >
-                Payme Design System
-              </h1>
-              <p class="leading-relaxed mb-3">
-                MyCustomer is an on-demand, scalable ledger solution for small
-                and medium sized businesses globally.
-              </p>
-              <a class="text-indigo-500 inline-flex items-center"
-                >Real Case Study
-                <svg
-                  class="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <div class=" mt-24 flex   ">
-                <img
-                  src="../assets/holding-iphone.png"
-                  alt=" love logo"
-                  class="ml-auto image-phone"
-                  id="image-phone"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end of card page -->
-        <div class="flex flex-wrap justify-center -m-4">
-          <div class="p-4 lg:w-2/5">
-            <div
-              class="h-full bg-gray-200 px-8 pt-16 pb-24  overflow-hidden  relative card-two"
-            >
-              <h1
-                class="title-font sm:text-2xl  text-xl font-medium text-gray-900 mb-3"
-              >
-                Payme Design System
-              </h1>
-              <p class="leading-relaxed mb-3">
-                MyCustomer is an on-demand, scalable ledger solution for small
-                and medium sized businesses globally.
-              </p>
-              <a class="text-indigo-500 inline-flex items-center"
-                >Real Case Study
-                <svg
-                  class="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <div class=" mt-24 flex   ">
-                <img
-                  src="../assets/holding-iphone.png"
-                  alt=" love logo"
-                  class="ml-auto image-phone"
-                  id="image-phone"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="p-4 lg:w-2/5">
-            <div
-              class="h-full bg-gray-200 px-8 pt-16 pb-24 overflow-hidden  relative card-two"
-            >
-              <h1
-                class="title-font sm:text-2xl  text-xl font-medium text-gray-900 mb-3"
-              >
-                Payme Design System
-              </h1>
-              <p class="leading-relaxed mb-3">
-                MyCustomer is an on-demand, scalable ledger solution for small
-                and medium sized businesses globally.
-              </p>
-              <a class="text-indigo-500 inline-flex items-center"
-                >Real Case Study
-                <svg
-                  class="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <div class=" mt-24 flex   ">
-                <img
-                  src="../assets/holding-iphone.png"
-                  alt=" love logo"
-                  class="ml-auto image-phone"
-                  id="image-phone"
-                />
-              </div>
-            </div>
-          </div>
+  <section>
+    <div>
+      <h2 class="content">
+        Contents
+      </h2>
+      <p class="content-p">
+        We focus on ergonomics and meeting you where you work. <br />
+        It's only a keystroke away.
+      </p>
+    </div>
+    <div class="card-style">
+      <div class="card-1">
+        <h3 class="card-header">Work</h3>
+        <p class="cards-p">
+          Ever wondered if you're too reliant <br />
+          on a client for work? Slate helps <br />
+          you identify.
+        </p>
+        <button class="content-btn-1">Sign Up</button>
+        <div class="img-group">
+          <img
+            class="screen-mask-img"
+            src="../assets/SCREEN MASK.png"
+            alt=""
+          />
+          <img class="grip-img" src="../assets/grip.png" alt="" />
+          <img class="base-img" src="../assets/Base.png" alt="" />
         </div>
       </div>
-      <div class="digital-container " v-show="tabActiveIndex == 1">
-        <DigitalMarketing />
-      </div>
-      <div class="logo-container" v-show="tabActiveIndex == 2">
-        <Logo />
+      <div class="card-2">
+        <h3 class="card-header">Design with real data</h3>
+        <p class="cards-p">
+          Ever wondered if you're too reliant <br />
+          on a client for work? Slate helps <br />
+          you identify.
+        </p>
+        <button class="content-btn-2">Try For Free</button>
+        <img
+          class="board-img"
+          src="../assets/Boards Notifications.png"
+          alt=""
+        />
       </div>
     </div>
   </section>
 </template>
 <script>
-import TabIndex from "@/components/TabIndex.vue";
-import Logo from "@/components/Logo.vue";
-import DigitalMarketing from "@/components/DigitalMarketing.vue";
+// import TabIndex from "@/components/TabIndex.vue";
+// import Logo from "@/components/Logo.vue";
+// import DigitalMarketing from "@/components/DigitalMarketing.vue";
 export default {
   name: "Projects",
-  components: {
-    TabIndex,
-    DigitalMarketing,
-    Logo,
-  },
+
   data() {
     return {
       tabActiveIndex: 0,
@@ -193,18 +64,100 @@ export default {
   },
 };
 </script>
-<style>
-.card-page {
-  background-color: #012b3d;
+<style scoped>
+.content {
+  text-align: center;
+  font-size: 52px;
+  font-weight: normal;
+  margin-top: 10%;
 }
-.card-two {
-  background-color: #d9f6f1;
+
+.content-p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
 }
-.work-heading {
-  padding-left: 20px;
+
+.card-style {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
 }
-/* .iphone-pro img{
-  width:280px;
-  height:280px;
-} */
+
+.card-header {
+  color: #000000;
+}
+
+.cards-p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.card-1 {
+  background-color: #ffffff;
+  color: #5c5c5c;
+  border: 1px solid #d3d3d3;
+  border-radius: 7px;
+  text-align: center;
+  height: 470px;
+  width: 350px;
+}
+
+.img-group {
+  position: relative;
+}
+
+.screen-mask-img {
+  border: 7px solid#000000;
+  width: 250px;
+  margin-top: 23%;
+}
+
+.grip-img {
+  position: absolute;
+  top: 246px;
+  right: 150px;
+}
+
+.base-img {
+  position: absolute;
+  top: 250px;
+  right: 27px;
+  width: 300px;
+}
+
+.card-2 {
+  background-color: #ffffff;
+  color: #5c5c5c;
+  border: 1px solid #d3d3d3;
+  border-radius: 6px;
+  text-align: center;
+  margin-left: 2%;
+  height: 470px;
+  width: 350px;
+}
+
+.board-img {
+  width: 330px;
+  margin-top: 10%;
+}
+
+.content-btn-1 {
+  margin-top: 1%;
+  border: none;
+  background-color: #4452fe;
+  color: #ffffff;
+  width: 90px;
+  height: 40px;
+}
+
+.content-btn-2 {
+  border: none;
+  background-color: #4452fe;
+  color: #ffffff;
+  width: 90px;
+  height: 40px;
+}
 </style>

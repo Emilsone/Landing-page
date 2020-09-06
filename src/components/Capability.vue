@@ -1,84 +1,45 @@
 <template>
-  <section class="">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="text ml-48">
-        <h1
-          class="sm:text-xl text-3xl  py-6  font-medium   text-black work-heading"
-        >
-          Capabilities
-        </h1>
+  <section>
+    <div>
+      <h2 class="features">
+        FEATURES
+      </h2>
+      <p class="features-p">
+        Most calendars are designed for teams. Slate is designed for <br />
+        freelancers who want a simple way to plan their schedule.
+      </p>
+    </div>
+    <div class="features-style">
+      <div class="features-img1">
+        <img src="../assets/Chat Bot.png" alt="" />
       </div>
-      <div class="flex flex-wrap justify-center -m-6">
-        <div class="xl:w-1/4 md:w-1/2 p-4">
-          <div class="bg-gray-100 p-6 ">
-            <span>
-              <i class="fa fa-smile-o text-2xl" aria-hidden="true"></i
-            ></span>
-
-            <h2 class="text-3xl text-gray-900 font-medium title-font mb-4">
-              USER INTERFACE DESIGN
-            </h2>
-            <span
-              ><i class="fa fa-facebook  px-4 text-2xl" aria-hidden="true"></i
-            ></span>
-            <span
-              ><i class="fa fa-instagram  px-4 text-2xl" aria-hidden="true"></i
-            ></span>
-            <span
-              ><i class="fa fa-twitter  px-4 text-2xl" aria-hidden="true"></i
-            ></span>
-            <span
-              ><i class="fa fa-behance  px-4 text-2xl" aria-hidden="true"></i
-            ></span>
-            <!-- <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p> -->
-          </div>
+      <div class="features-img2">
+        <img src="../assets/Line Chart 1.png" alt="" />
+      </div>
+      <div class="features-txt">
+        <div>
+          <h3 class="truth">A single source of truth</h3>
+          <p>
+            When you add work to your <br />
+            Slate calendar we automatically <br />
+            calculate useful insights
+          </p>
         </div>
-        <div class="xl:w-1/4 md:w-1/2 p-4">
-          <div class="bg-gray-100 p-6">
-            <!-- <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content"> -->
-            <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
-            <i class="fa fa-smile-o text-xl" aria-hidden="true"></i>
-            <h2 class=" text-3xl text-gray-900 font-medium title-font mb-4">
-              SOCIAL MEDIA DESIGN
-            </h2>
-            <span
-              ><i class="fa fa-facebook  px-4 text-xl" aria-hidden="true"></i
-            ></span>
-            <span
-              ><i class="fa fa-instagram  px-4 text-xl" aria-hidden="true"></i
-            ></span>
-            <span
-              ><i class="fa fa-twitter  px-4 text-xl" aria-hidden="true"></i
-            ></span>
-            <span
-              ><i class="fa fa-behance  px-4 text-xl" aria-hidden="true"></i
-            ></span>
-            <!-- <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p> -->
-          </div>
+        <div>
+          <h3 class="interface">Intuitive interface</h3>
+          <p>
+            When you add work to your <br />
+            Slate calendar we automatically <br />
+            calculate useful insights
+          </p>
         </div>
-
-        <div class="xl:w-1/4 md:w-1/2 p-4">
-          <div class="bg-gray-100 p-6">
-            <!-- <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content"> -->
-            <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>-->
-            <i class="fa fa-smile-o text-xl" aria-hidden="true"></i>
-            <h2 class="text-3xl text-gray-900 font-medium title-font mb-4">
-              WEB DEVELOPMENT
-            </h2>
-            <span
-              ><i class="fa fa-facebook  px-4 text-xl" aria-hidden="true"></i
-            ></span>
-            <span
-              ><i class="fa fa-instagram  px-4 text-xl" aria-hidden="true"></i
-            ></span>
-            <span
-              ><i class="fa fa-twitter  px-4 text-xl" aria-hidden="true"></i
-            ></span>
-            <span
-              ><i class="fa fa-behance  px-4 text-xl" aria-hidden="true"></i
-            ></span>
-            <!-- <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p> -->
-          </div>
+        <div>
+          <h3 class="rules">Or with rules</h3>
+          <p>
+            When you add work to your <br />
+            Slate calendar we automatically <br />
+            calculate useful insights
+          </p>
         </div>
       </div>
     </div>
@@ -90,16 +51,60 @@ export default {
 };
 </script>
 <style scoped>
-/* span {
-background-color: gray;
-color: orange;
-width: 50%;
-height: 70%;
-border-radius: 90px;
-padding: 30px 0px;
+.features {
+  font-size: 52px;
+  font-weight: lighter;
+  line-height: 88px;
+  text-align: center;
+  margin-top: 10%;
+}
 
-} */
-.work-heading {
-  padding-left: 15px;
+.features-p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.features-style {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.features-txt {
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.features-txt p {
+  font-size: 16px;
+  /* line-height: 24px; */
+  font-weight: normal;
+}
+
+.features-txt h3 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.truth::before {
+  /* content: url(../assets/Vector-one.png); */
+  padding-right: 30px;
+}
+
+.interface::before {
+  /* content: url(../assets/Vector-tw); */
+  padding-right: 30px;
+}
+
+.rules::before {
+  /* content: url(../assets/Vector-three); */
+  padding-right: 30px;
+}
+
+.features-img2 {
+  position: absolute;
+  top: 60%;
 }
 </style>
